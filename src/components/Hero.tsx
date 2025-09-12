@@ -32,12 +32,6 @@ const Hero = () => {
                 <span className="block text-accent-gold-light">On a tous confiance</span>
               </h1>
 
-              {/* Subtitle */}
-              <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl">
-                🚀 Livraison rapide et sécurisée partout en Côte d'Ivoire.
-                <br />
-                <span className="text-accent-gold-light font-semibold">Votre partenaire de confiance pour tous vos besoins.</span>
-              </p>
 
               {/* Stats */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-10">

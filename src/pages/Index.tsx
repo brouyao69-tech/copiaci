@@ -9,6 +9,7 @@ import Testimonials from '@/components/Testimonials';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import ChatBot from '@/components/ChatBot';
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <CTASection />
       <Footer />
       <WhatsAppButton />
+      <ChatBot />
     </div>
   );
 };
