@@ -145,7 +145,7 @@ const Zones = () => {
                 </p>
                 <button 
                   className="btn-copia text-sm px-6 py-2"
-                  onClick={() => window.open('https://wa.me/0718973022?text=Bonjour, je souhaiterais savoir si vous livrez dans ma ville', '_blank')}
+                  onClick={() => window.open('https://wa.me/2250718973022?text=Bonjour, je souhaiterais savoir si vous livrez dans ma ville', '_blank')}
                 >
                   Nous contacter
                 </button>

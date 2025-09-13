@@ -97,13 +97,13 @@ const FAQ = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 className="bg-white text-primary font-semibold px-6 py-3 rounded-xl hover:bg-white/90 transition-colors duration-300"
-                onClick={() => window.open('https://wa.me/0718973022?text=Bonjour, j\'ai une question', '_blank')}
+                onClick={() => window.open('https://wa.me/2250718973022?text=Bonjour, j\'ai une question', '_blank')}
               >
                 💬 WhatsApp Support
               </button>
               <button 
                 className="border-2 border-white text-white font-semibold px-6 py-3 rounded-xl hover:bg-white hover:text-primary transition-colors duration-300"
-                onClick={() => window.open('tel:0718973022', '_blank')}
+                onClick={() => window.open('tel:+2250718973022', '_blank')}
               >
                 📞 Appeler maintenant
               </button>

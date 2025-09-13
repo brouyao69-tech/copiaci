@@ -87,7 +87,7 @@ const Services = () => {
               </button>
               <button 
                 className="border-2 border-white text-white font-semibold px-8 py-4 rounded-xl hover:bg-white hover:text-primary transition-colors duration-300 flex items-center justify-center space-x-2"
-                onClick={() => window.open('https://wa.me/0718973022', '_blank')}
+                onClick={() => window.open('https://wa.me/2250718973022', '_blank')}
               >
                 <Headphones className="w-5 h-5" />
                 <span>Nous contacter</span>

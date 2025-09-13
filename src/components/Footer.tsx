@@ -128,7 +128,7 @@ const Footer = () => {
                   <div>
                     <p className="font-semibold">WhatsApp & Téléphone</p>
                     <a 
-                      href="tel:0718973022" 
+                      href="tel:+2250718973022" 
                       className="text-white/80 hover:text-accent-gold-light transition-colors"
                     >
                       07 18 97 30 22

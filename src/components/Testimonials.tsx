@@ -121,7 +121,7 @@ const Testimonials = () => {
           </p>
           <button 
             className="btn-copia"
-            onClick={() => window.open('https://wa.me/0718973022?text=Bonjour, je souhaite laisser un témoignage', '_blank')}
+            onClick={() => window.open('https://wa.me/2250718973022?text=Bonjour, je souhaite laisser un témoignage', '_blank')}
           >
             Laisser un témoignage
           </button>

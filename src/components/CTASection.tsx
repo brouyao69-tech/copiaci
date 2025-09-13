@@ -54,7 +54,7 @@ const CTASection = () => {
               <Button 
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-10 py-6 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center space-x-3"
-                onClick={() => window.open('https://wa.me/0718973022?text=Bonjour, j\'ai besoin d\'un coursier', '_blank')}
+                onClick={() => window.open('https://wa.me/2250718973022?text=Bonjour, j\'ai besoin d\'un coursier', '_blank')}
               >
                 <MessageCircle className="w-6 h-6" />
                 <span>Commander via WhatsApp</span>
@@ -79,7 +79,7 @@ const CTASection = () => {
                 <div>
                   <span className="font-semibold">📞 Téléphone :</span>
                   <br />
-                  <a href="tel:0718973022" className="hover:text-accent-gold-light transition-colors">
+                  <a href="tel:+2250718973022" className="hover:text-accent-gold-light transition-colors">
                     07 18 97 30 22
                   </a>
                 </div>
