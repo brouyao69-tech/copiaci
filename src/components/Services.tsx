@@ -41,25 +41,25 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <div key={index} className="card-copia group text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent-gold rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <service.icon className="w-8 h-8 text-white" />
+              <div className="w-14 sm:w-16 h-14 sm:h-16 bg-gradient-to-r from-primary to-accent-gold rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <service.icon className="w-7 sm:w-8 h-7 sm:h-8 text-white" />
               </div>
               
-              <h3 className="text-xl font-bold text-foreground mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 sm:mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                 {service.description}
               </p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="text-sm text-muted-foreground flex items-center justify-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-accent-gold rounded-full"></div>
+                  <li key={idx} className="text-xs sm:text-sm text-muted-foreground flex items-center justify-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-accent-gold rounded-full flex-shrink-0"></div>
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -77,19 +77,19 @@ const Services = () => {
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
               Rejoignez les milliers de clients qui nous font confiance chaque jour
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <button 
-                className="bg-white text-primary font-semibold px-8 py-4 rounded-xl hover:bg-white/90 transition-colors duration-300 flex items-center justify-center space-x-2"
+                className="bg-white text-primary font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-white/90 transition-colors duration-300 flex items-center justify-center space-x-2 min-h-[48px] text-sm sm:text-base"
                 onClick={() => window.open('#', '_blank')}
               >
-                <ShoppingBag className="w-5 h-5" />
+                <ShoppingBag className="w-4 sm:w-5 h-4 sm:h-5" />
                 <span>Commander maintenant</span>
               </button>
               <button 
-                className="border-2 border-white text-white font-semibold px-8 py-4 rounded-xl hover:bg-white hover:text-primary transition-colors duration-300 flex items-center justify-center space-x-2"
+                className="border-2 border-white text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-white hover:text-primary transition-colors duration-300 flex items-center justify-center space-x-2 min-h-[48px] text-sm sm:text-base"
                 onClick={() => window.open('https://wa.me/2250718973022', '_blank')}
               >
-                <Headphones className="w-5 h-5" />
+                <Headphones className="w-4 sm:w-5 h-4 sm:h-5" />
                 <span>Nous contacter</span>
               </button>
             </div>

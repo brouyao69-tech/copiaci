@@ -81,18 +81,18 @@ const About = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
           {[
             { number: '1000+', label: 'Clients satisfaits' },
             { number: '4', label: 'Villes couvertes' },
             { number: '24h/7j', label: 'Support client' },
             { number: '98%', label: 'Taux de satisfaction' }
           ].map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold gradient-text mb-2">
+            <div key={index} className="text-center p-4">
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text mb-2">
                 {stat.number}
               </div>
-              <div className="text-muted-foreground font-medium">
+              <div className="text-muted-foreground font-medium text-sm sm:text-base">
                 {stat.label}
               </div>
             </div>

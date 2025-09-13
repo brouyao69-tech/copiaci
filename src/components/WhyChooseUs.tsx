@@ -41,21 +41,21 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
           {advantages.map((advantage, index) => (
-            <div key={index} className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-r from-primary/10 to-accent-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <advantage.icon className={`w-10 h-10 ${advantage.color}`} />
+            <div key={index} className="text-center group p-4">
+              <div className="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-r from-primary/10 to-accent-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <advantage.icon className={`w-8 sm:w-10 h-8 sm:h-10 ${advantage.color}`} />
               </div>
               
               <div className="flex items-center justify-center mb-3">
-                <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                <h3 className="text-lg font-bold text-foreground">
+                <CheckCircle className="w-4 sm:w-5 h-4 sm:h-5 text-green-500 mr-2 flex-shrink-0" />
+                <h3 className="text-base sm:text-lg font-bold text-foreground text-left">
                   {advantage.title}
                 </h3>
               </div>
               
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                 {advantage.description}
               </p>
             </div>
@@ -73,18 +73,18 @@ const WhyChooseUs = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
             {[
               { metric: '98%', label: 'Satisfaction client' },
               { metric: '1000+', label: 'Livraisons réussies' },
               { metric: '24h/7j', label: 'Support disponible' },
               { metric: '4', label: 'Villes couvertes' }
             ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold gradient-text mb-2">
+              <div key={index} className="text-center p-2">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text mb-2">
                   {stat.metric}
                 </div>
-                <div className="text-muted-foreground font-medium">
+                <div className="text-muted-foreground font-medium text-xs sm:text-sm">
                   {stat.label}
                 </div>
               </div>
@@ -93,7 +93,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Security Features */}
-        <div className="mt-16 grid md:grid-cols-3 gap-8">
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {[
             {
               title: 'Paiement sécurisé',
@@ -109,11 +109,11 @@ const WhyChooseUs = () => {
             }
           ].map((feature, index) => (
             <div key={index} className="card-copia text-center">
-              <Shield className="w-8 h-8 text-primary mx-auto mb-4" />
-              <h4 className="text-lg font-semibold text-foreground mb-2">
+              <Shield className="w-6 sm:w-8 h-6 sm:h-8 text-primary mx-auto mb-3 sm:mb-4" />
+              <h4 className="text-base sm:text-lg font-semibold text-foreground mb-2">
                 {feature.title}
               </h4>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-xs sm:text-sm">
                 {feature.description}
               </p>
             </div>

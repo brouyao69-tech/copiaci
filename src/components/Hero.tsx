@@ -34,39 +34,39 @@ const Hero = () => {
 
 
               {/* Stats */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-10">
+              <div className="grid grid-cols-3 gap-4 sm:gap-6 mb-10 max-w-md mx-auto lg:max-w-none lg:flex lg:justify-start">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-accent-gold">1000+</div>
-                  <div className="text-white/80 text-sm">Clients satisfaits</div>
+                  <div className="text-xl sm:text-2xl font-bold text-accent-gold">1000+</div>
+                  <div className="text-white/80 text-xs sm:text-sm">Clients satisfaits</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-accent-gold">4</div>
-                  <div className="text-white/80 text-sm">Villes couvertes</div>
+                  <div className="text-xl sm:text-2xl font-bold text-accent-gold">4</div>
+                  <div className="text-white/80 text-xs sm:text-sm">Villes couvertes</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-accent-gold">24h/7j</div>
-                  <div className="text-white/80 text-sm">Service client</div>
+                  <div className="text-xl sm:text-2xl font-bold text-accent-gold">24h/7j</div>
+                  <div className="text-white/80 text-xs sm:text-sm">Service client</div>
                 </div>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg"
-                  className="btn-copia-gold text-lg px-8 py-4 flex items-center space-x-2"
+                  className="btn-copia-gold text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center space-x-2 min-h-[48px]"
                   onClick={() => window.open('https://copia-5grc.glide.page', '_blank')}
                 >
                   <span>Visiter notre boutique</span>
-                  <ArrowRight className="w-5 h-5" />
+                  <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5" />
                 </Button>
                 
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-primary text-lg px-8 py-4 flex items-center space-x-2"
+                  className="text-white border-white hover:bg-white hover:text-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center space-x-2 min-h-[48px]"
                   onClick={() => document.querySelector('#services')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  <Truck className="w-5 h-5" />
+                  <Truck className="w-4 sm:w-5 h-4 sm:h-5" />
                   <span>Nos services</span>
                 </Button>
               </div>
