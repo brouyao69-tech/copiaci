@@ -54,7 +54,7 @@ const Hero = () => {
                 <Button 
                   size="lg"
                   className="btn-copia-gold text-lg px-8 py-4 flex items-center space-x-2"
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://copia-5grc.glide.page', '_blank')}
                 >
                   <span>Visiter notre boutique</span>
                   <ArrowRight className="w-5 h-5" />

@@ -57,7 +57,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <Button 
               className="btn-copia hidden sm:flex items-center space-x-2"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://copia-5grc.glide.page', '_blank')}
             >
               <span>Visiter notre boutique</span>
               <ExternalLink className="w-4 h-4" />
@@ -89,7 +89,7 @@ const Header = () => {
               <div className="px-4 pt-4">
                 <Button 
                   className="btn-copia w-full flex items-center justify-center space-x-2"
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://copia-5grc.glide.page', '_blank')}
                 >
                   <span>Visiter notre boutique</span>
                   <ExternalLink className="w-4 h-4" />
